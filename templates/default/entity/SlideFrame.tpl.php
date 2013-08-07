@@ -1,9 +1,22 @@
-<link rel="stylesheet" href="http://shwr.me/shower/themes/bright/styles/screen.css">
+<!doctype html>
+<head>
+    <title><?php echo htmlspecialchars($vars['object']->getTitle()); ?></title>
+    <link rel="stylesheet" href="http://shwr.me/shower/themes/bright/styles/screen.css">
+</head>
+<body>
+<header class="caption">
+    <h1><a href="<?php echo $vars['object']->getURL(); ?>"><?php echo $vars['object']->getTitle(); ?></a></h1>
+
+    <p>
+        <a href="<?php echo $vars['object']->getURL(); ?>">Hosted
+            on <?php echo \Idno\Core\site()->config()->title; ?></a>
+    </p>
+</header>
 <?php
 
     if (!empty($vars['object']->slides) && is_array($vars['object']->slides)) {
 
-        foreach($vars['object']->slides as $slide) {
+        foreach ($vars['object']->slides as $slide) {
 
             ?>
 
@@ -25,3 +38,5 @@
 
 ?>
 <script src="/IdnoPlugins/Presentation/external/shower/shower.min.js"></script>
+</body>
+</html>
