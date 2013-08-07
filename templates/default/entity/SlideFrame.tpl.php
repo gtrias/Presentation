@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="http://shwr.me/shower/themes/ribbon/styles/screen.css">
+<link rel="stylesheet" href="http://shwr.me/shower/themes/bright/styles/screen.css">
 <?php
 
     if (!empty($vars['object']->slides) && is_array($vars['object']->slides)) {
