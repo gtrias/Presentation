@@ -76,7 +76,7 @@
                         // Add it to the Activity Streams feed
                         $this->addToFeed();
                     }
-                    \Idno\Core\Webmention::pingMentions(\Idno\Core\site()->config()->url . 'slideframe/' . $this->getID(), \Idno\Core\site()->template()->parseURLs($this->getDescription()));
+                    \Idno\Core\Webmention::pingMentions(\Idno\Core\site()->config()->url . 'slides/' . $this->getID() . '/view/', \Idno\Core\site()->template()->parseURLs($this->getDescription()));
                     \Idno\Core\site()->session()->addMessage('Your slides were successfully saved.');
                     return true;
                 }
