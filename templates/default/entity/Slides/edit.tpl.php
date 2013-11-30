@@ -56,6 +56,7 @@
 
     <div class="row">
         <div class="span12">
+            <?php if (empty($vars['object']->_id)) echo $this->drawSyndication('article'); ?>
             <p>
                 <?= \Idno\Core\site()->actions()->signForm('/slides/edit') ?>
                 <input type="submit" class="btn btn-primary" value="Save" />
