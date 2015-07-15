@@ -2,6 +2,7 @@
 <head>
     <title><?php echo htmlspecialchars($vars['object']->getTitle()); ?></title>
     <link rel="stylesheet" href="http://shwr.me/shower/themes/bright/styles/screen.css">
+    <meta charset="utf-8" />
 </head>
 <body>
 <header class="caption">
